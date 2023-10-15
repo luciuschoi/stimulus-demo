@@ -1,11 +1,24 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
-<!--
-<button data-controller='counter'>Button</button>
--->
-<%= button_tag "0",
-                data: { 
-                  controller: 'counter',
-                  action: 'click->counter#increment'
-                } %>
+<%= button_tag name: 'counter', type: 'button',
+    id: "counter",
+    data: { 
+      controller: 'counter',
+      action: 'click->counter#increment',
+      counter_count_value: 0,
+      counter_over_ten_class: 'over',
+      counter_reset_outlet: '#reset'
+    } do %>
+  Count: <%= content_tag :span, 0, data: { counter_target: 'count'} %>
+<% end%>
+
+<%= button_tag name: 'reset', type: 'button', id: 'reset', disabled: true, 
+    data: {
+      controller: 'reset',
+      action: 'click->reset#handleReset',
+      reset_counter_outlet: '#counter',
+      reset_enabled_value: false
+    } do %>
+  Reset
+<% end %>
