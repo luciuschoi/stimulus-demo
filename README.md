@@ -1,24 +1,3 @@
-# README
+# stimulus.js 데모 프로제긑
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2023년 10월 26일 월요일 오후 7시부터 Zoom으로 진행되었던 RORLAB TOPIC LECTURE: Stimulus.js final에서 데모로 진행하였던 stimulus.js 데모 프로젝트입니다.
